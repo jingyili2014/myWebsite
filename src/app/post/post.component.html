@@ -1,0 +1,15 @@
+<!--Post Block-->
+    <div class="pricing-block-content">
+        <h3>{{post.title}}</h3>
+        <p class="pricing-sub">{{post.date | date:'yyyy-MMM-dd'}}</p>
+        <div class="pricing">
+            <div class="price"><span>{{post.country}}</span>{{post.city}}</div>
+            <p>{{post.description}}</p>
+        </div>
+        <a routerLink="/Article/{{post.id}}" class="button">{{post.buttonText}}</a>
+    </div>
+
+<!--End Post Block-->
+
+
+<!-- <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s" *ngFor="let post of pricing.posts" [class.featured]="post.featured"></div> -->

@@ -7,7 +7,7 @@ import { ConfigService } from '../config.service';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
- 
+  tabName: string = 'Home';
   navigation: {};
 
   constructor(private configService: ConfigService) { }
@@ -18,6 +18,11 @@ export class NavigationComponent implements OnInit {
 
   getNavigation() {
     return this.configService.getConfig().navigation;
+  }
+
+  getActive(tabName: string) {
+    this.tabName = tabName;
+    console.log(this.tabName)
   }
 
 }

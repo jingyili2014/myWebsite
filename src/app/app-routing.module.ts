@@ -9,6 +9,8 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ClientsComponent } from './clients/clients.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { HeaderComponent } from './header/header.component';
+import { BlogComponent } from './blog/blog.component';
+import { ArticleComponent } from './article/article.component';
 
 
 
@@ -21,7 +23,9 @@ const routes: Routes = [
   {path: 'Testimonial', component: TestimonialComponent},
   {path: 'Gallery', component: GalleryComponent},
   {path: 'Clients', component: ClientsComponent},
-  {path: 'Pricing', component: PricingComponent}
+  {path: 'Pricing', component: PricingComponent},
+  {path: 'Blog', component: BlogComponent},
+  {path: 'Article/:id', component: ArticleComponent}
 ];
 
 @NgModule({

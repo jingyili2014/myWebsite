@@ -21,7 +21,13 @@ export const configuration = {
     services: { 
         tagLine: 'BELIEVING',
         title: 'Focusing On What Matters Most',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!'
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!',
+        username: 'John Doe',
+        comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+        company: 'Happy Customer',
+        paragraph: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+        paragraphSecond: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet!',
+        bottomText: 'WATCH VIDEO'
     },
 
     testimonial: { 
@@ -152,6 +158,44 @@ export const configuration = {
         {link: '/Services', title: 'Services'},
         {link: '/Testimonial', title: 'Testimonial'},
         {link: '/Clients', title: 'Clients'},
-        {link: '/Pricing', title: 'Pricing'}
-    ]
+        {link: '/Pricing', title: 'Pricing'},
+        {link: '/Blog', title: 'Blog'}
+    ],
+
+    blog: {
+        title: 'Hello World',
+        tagLine: 'My Blog',
+        posts: [
+            {
+                id: 1,
+                title: 'Article 1',
+                date: '2018-09-10',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+                country: 'Canada',
+                city: 'Ottawa',
+                buttonText: 'See more',
+                featured: true
+            },
+            {
+                id: 2,
+                title: 'Article 2',
+                date: '2019-04-20',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+                country: 'France',
+                city: 'Paris',
+                buttonText: 'See more',
+                featured: true
+            },
+            {
+                id: 3,
+                title: 'Article 3',
+                date: '2018-10-25',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', 
+                country: 'Japan',
+                city: 'Tokyo',              
+                buttonText: 'See more',
+                featured: true
+            }
+        ]
+    }
 }

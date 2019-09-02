@@ -20,7 +20,7 @@
             <nav id="nav-main">
                 <ul>
                     <li *ngFor="let nav of navigation">
-                        <a routerLink="{{nav.link}}">{{nav.title}}</a>
+                        <a routerLink="{{nav.link}}" (click)="getActive(nav.title)" [class.active]="tabName === nav.title">{{nav.title}}</a>
                     </li>
                 </ul>
             </nav>
