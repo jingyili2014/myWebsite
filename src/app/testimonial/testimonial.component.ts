@@ -1,0 +1,23 @@
+import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
+
+@Component({
+  selector: 'app-testimonial',
+  templateUrl: './testimonial.component.html',
+  styleUrls: ['./testimonial.component.css']
+})
+export class TestimonialComponent implements OnInit {
+
+  testimonial: {};
+
+  constructor(private configService: ConfigService) { }
+
+  ngOnInit() {
+    this.testimonial = this.getTestimonial();
+  }
+
+  getTestimonial() {
+    return this.configService.getConfig().testimonial;
+  }
+
+}
